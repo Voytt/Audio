@@ -1,0 +1,18 @@
+
+Examples of potetial paths:
+
+urlpatterns = [
+  path('', views.home, name = "home"),
+  
+  path('account/', views.account, name = "account"),
+  path('account/register/', views.reegister, name = "register"),
+  path('account/login/', views.login, name = "login"),
+  path('account/signin', views.signin, name = "signin"),
+  path('account/logout', views.logout, name = "logout"),
+  
+  path('pages/downloads/', views.downlaods, name = "downloads"),
+  path('pages/personal-info/', views.personal_info, name = "personal-info"),
+  
+  path('cart/', views.cart, name = "cart"),
+  
+]

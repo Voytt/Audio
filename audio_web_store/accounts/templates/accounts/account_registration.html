@@ -1,0 +1,9 @@
+{% extends 'components/main.html' %}
+{% load static %}
+{% block content %}
+    <form action="{% url 'account_registration_view' %}" method="POST">
+        {% csrf_token %}
+        {{ userCreationForm }}
+        <input type="submit" value="Sign Up">
+    </form>
+{% endblock content %}

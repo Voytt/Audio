@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Audio Loops</title>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="{% url 'products_home_view' %}"><img src='{% static "images/logo.png" %}'></a></li>
+        <li class="account"><a href="account.html">My account</a></li>
+        <li class="account"><a href="account.html">Cart</a></li>
+      </ul>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

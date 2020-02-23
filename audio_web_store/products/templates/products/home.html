@@ -1,0 +1,28 @@
+{% extends 'components/main.html' %}
+{% load static %}
+{% block content %}
+    <div class="hero">
+
+    </div>
+
+    <div class="flexbox">
+    {% for product in products %}
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="{{ product.image.url }}" height="420" width="327">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+            <h1>{{product.name}}</h1>
+            <h2>{{product.subtitle}}</h2>
+            <p>{{product.description}}</p>
+            </div>
+            <div class="product-price-btn">
+            
+            <button type="button">buy now - {{product.price}}</button>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock content %}
